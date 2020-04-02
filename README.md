@@ -1,4 +1,4 @@
-#Deploying a base Freebsd configuration. 
+# Deploying a base Freebsd configuration. 
 
 This will take a vanilla freebsd system and install and configure:
 
@@ -7,7 +7,11 @@ Software:
   - bind
   - zfs snapshot tools  - need to get the exact name
 
-Installation
+## Environment setup
+   run vagrant up 
+	in the vagrant folder
+
+## Installation
 
     Install python3 or higher
     Run $ ansible-galaxy install -r requirements.yml inside this directory to install required Ansible roles.
