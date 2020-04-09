@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell",
     inline: "env ASSUME_ALWAYS_YES=YES pkg upgrade"
   config.vm.provision "shell",
-    inline: "env ASSUME_ALWAYS_YES=YES pkg install python38"
+    inline: "env ASSUME_ALWAYS_YES=YES pkg install python37"
   config.vm.provider :virtualbox do |v|
     v.memory = 512
     v.linked_clone = true

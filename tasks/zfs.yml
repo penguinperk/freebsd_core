@@ -1,0 +1,3 @@
+---
+- name: Install ZFS Tools
+  pkgng: name=zfstools state=present

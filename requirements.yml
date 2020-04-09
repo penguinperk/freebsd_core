@@ -1,5 +1,3 @@
 ---
+- src: penguinperk.postfix_ansible_role
 
-- src: ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/bind_client_ansible_role
-  scm: git
-  version: "setup" 
