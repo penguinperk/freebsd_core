@@ -7,6 +7,7 @@
 
   roles: 
     - role: penguinperk.postfix_ansible_role
+    - role: penguinperk.bind_client_ansible_role
 
   tasks:
   - include_tasks: tasks/zfs.yml
