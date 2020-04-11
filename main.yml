@@ -8,6 +8,16 @@
   roles: 
     - role: penguinperk.postfix_ansible_role
     - role: penguinperk.bind_client_ansible_role
-
+      resolv_nameservers:
+            - "192.168.11.5"
+            - "192.168.11.23"
+            - "1.1.1.1"
+          resolv_domain: "pn.com"
+          resolv_search:
+            - "pn.com
+            - "pn"
+          resolv_options:
+            - "timeout:2"
+            - "rotate"
   tasks:
   - include_tasks: tasks/zfs.yml
